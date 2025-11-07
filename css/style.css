@@ -1,0 +1,263 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --success: #27ae60;
+    --danger: #e74c3c;
+    --warning: #f39c12;
+    --light: #ecf0f1;
+    --dark: #34495e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    color: var(--primary);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--success);
+}
+
+.btn-success:hover {
+    background-color: #219653;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-warning {
+    background-color: var(--warning);
+}
+
+.btn-warning:hover {
+    background-color: #d35400;
+}
+
+.file-input {
+    padding: 8px;
+    border: 1px dashed #ddd;
+    background-color: #f9f9f9;
+}
+
+.scan-area {
+    background-color: #f8f9fa;
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.scan-input {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.inventory-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.status-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.status-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.status-label {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.status-theoretical {
+    color: var(--secondary);
+}
+
+.status-physical {
+    color: var(--success);
+}
+
+.status-discrepancies {
+    color: var(--danger);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.discrepancy-high {
+    background-color: #ffebee;
+    color: var(--danger);
+    font-weight: bold;
+}
+
+.discrepancy-low {
+    background-color: #fff3e0;
+    color: var(--warning);
+    font-weight: bold;
+}
+
+.history-item {
+    border-left: 4px solid var(--secondary);
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.history-date {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.history-store {
+    color: var(--secondary);
+}
+
+.history-responsible {
+    color: #777;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+    border-bottom: 3px solid var(--secondary);
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #777;
+    border-top: 1px solid #eee;
+}
